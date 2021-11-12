@@ -10,7 +10,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  background-color: #111;
+}
+
+@media (max-width: 1200px) {
+  .image {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111;
+  }
+}
+
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #111;
 }
 
@@ -18,7 +36,7 @@
   background-color: #eee;
   color: #444;
   font-size: 1.2rem;
-  margin: 5px;
+  margin: 6px;
   padding: 5px 20px;
   border: none;
   cursor: pointer;
@@ -51,6 +69,26 @@
   background-image: url('../public/warbots.png');
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../public/warbots.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('../public/warbots.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .bannerContainer {

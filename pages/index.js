@@ -8,28 +8,25 @@ export default function Home() {
   function RenderMenu() {
     return (
       <div className={styles.image}>
-        <div className={styles.options}>
-          <a href="/App" target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>Play Game</button>
-          </a>
-          <a href="/Contract" target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>Contract Address</button>
-          </a>
-          <a href="/Marketplace" target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>Marketplace</button>
-          </a>
-          <a href="https://lucas85235.gitbook.io/warbots-whitepaper/" target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>Whitepaper</button>
-          </a>
-        </div>
-        <div className={styles.title}></div>
+        <a href="/App" target="_blank" rel="noopener noreferrer">
+          <button className={styles.button}>Play Game</button>
+        </a>
+        <a href="/Contract" target="_blank" rel="noopener noreferrer">
+          <button className={styles.button}>Contract Address</button>
+        </a>
+        <a href="/Marketplace" target="_blank" rel="noopener noreferrer">
+          <button className={styles.button}>Marketplace</button>
+        </a>
+        <a href="https://lucas85235.gitbook.io/warbots-whitepaper/" target="_blank" rel="noopener noreferrer">
+          <button className={styles.button}>Whitepaper</button>
+        </a>
       </div>
     )
   }
 
   function RenderFooter() {
     return (
-      <div className={styles.image}>
+      <div className={styles.footer}>
         <span>© 2021 Copyright - Warbots</span>
       </div>
     )
