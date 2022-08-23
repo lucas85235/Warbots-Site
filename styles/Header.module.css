@@ -1,0 +1,86 @@
+.image {
+    min-height: calc(50vh - 6rem);
+    background-image: url("../public/background.png");
+    background-position: top, left;
+}
+
+.div {
+    max-width: 56rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 6rem;
+    color: #222;
+}
+
+.span {
+    color: rgb(251, 191, 36);
+}
+
+.description {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptionText {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #333;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .div {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .text {
+        font-size: 6rem;
+        line-height: 1;
+    }
+
+    .descriptionText {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+}
+
+/* md */
+@media (max-width: 768px) {
+    .text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .div {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+}

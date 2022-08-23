@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import SocialMedias from '../components/SocialMedias'
+import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -75,24 +76,22 @@ export default function Home() {
       <Head>
         <title>Warbots</title>
         <meta name="description" content="Warbots nft game" />
-        <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
-      <SocialMedias/>
-      <NavBar/>
+      <SocialMedias />
+      <NavBar />
 
-      <div className={styles.bannerContainer}>
-        <div className={styles.banner}></div>
+      <div className={styles.page}>
+        <Header />
+
+        {RenderAbout()}
+        {RenderGameplay()}
+        {RenderRoadmap()}
+        {RenderTokenomics()}
+        {RenderTeam()}
+        {RenderFooter()}
       </div>
-
-      {RenderAbout()}
-      {RenderGameplay()}
-      {RenderRoadmap()}
-      {RenderTokenomics()}
-      {RenderTeam()}
-
-      {RenderFooter()}
-
     </div>
   )
 }

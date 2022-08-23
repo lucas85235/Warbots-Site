@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const buttons = [
     {
-        link: "#",
+        link: "https://discord.gg/YPWcefA2GE",
         image: "/icons/Discord.png"        
     },
     {
-        link: "#",
+        link: "https://t.me/+8Aj0UQLzqEM4NjRh",
         image: "/icons/Telegram.png"
     }
 ]
