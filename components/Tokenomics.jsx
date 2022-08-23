@@ -67,7 +67,7 @@ function TokensList() {
 export default function Tokenomics() {
     return (
         <div className={styles.container}>
-            <h1>Tokenomics</h1>
+            <h1 className={styles.h1}>Tokenomics</h1>
             {TokensList()}
         </div>
     )

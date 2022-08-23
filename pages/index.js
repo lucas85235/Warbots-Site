@@ -1,20 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import NavBar from '../components/NavBar'
+import styles from '../styles/Home.module.css'
 import SocialMedias from '../components/SocialMedias'
+import NavBar from '../components/NavBar'
 import Header from '../components/Header'
 import Tokenomics from '../components/Tokenomics'
-import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer'
 
 export default function Home() {
-
-  function RenderFooter() {
-    return (
-      <div className={styles.footer}>
-        <span>© 2021 Copyright - Warbots</span>
-      </div>
-    )
-  }
 
   function RenderAbout() {
     return (
@@ -51,15 +43,6 @@ export default function Home() {
     )
   }
 
-  function RenderTokenomics() {
-    return (
-      <div className={styles.container}>
-        <h1>Tokenomics</h1>
-        <Image src="/tokenomics.png" width={700} height={434}></Image>
-      </div>
-    )
-  }
-
   function RenderTeam() {
     return (
       <div className={styles.container}>
@@ -86,15 +69,14 @@ export default function Home() {
       <div className={styles.page}>
         <Header />
 
-        <Tokenomics />
-
-        {/* {RenderAbout()}
+        {RenderAbout()}
         {RenderGameplay()}
-        {RenderRoadmap()}
-        {RenderTokenomics()}
-        {RenderTeam()} */}
 
-        {RenderFooter()}
+        <Tokenomics />
+        {RenderRoadmap()}
+        {/* {RenderTeam()} */}
+
+        <Footer />
       </div>
     </div>
   )

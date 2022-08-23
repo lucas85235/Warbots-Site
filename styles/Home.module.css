@@ -4,21 +4,13 @@
   min-height: 100vh;
 }
 
-.footer {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #111;
-}
-
 .container {
-  height: 600px;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid #fff;
+  border-top: 2px solid #222;
 }
 
 .text {
