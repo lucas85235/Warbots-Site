@@ -1,15 +1,22 @@
-.button {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
     right: 10px;
     bottom: 10px;
+    width: 65px;
+    height: 135px;
+}
+
+.button {
+    background-color: #fff;
     width: 60px;
     height: 60px;
+    margin: 5px 0;
     border-radius: 30px;
     border: none;
-    position: fixed;
-    background-color: #fff;
     cursor: pointer;
 }
 
