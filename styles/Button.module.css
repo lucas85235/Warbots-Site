@@ -1,0 +1,26 @@
+.base {
+    font-size: 1.2rem;
+    margin: 6px;
+    padding: 10px 15px;
+    border-radius: 5px;    
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #6366f1;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #4f46e5;
+}
+
+.secondary {
+    background-color: #eee;
+    color: #444;
+}
+
+.secondary:hover {
+    background-color: #ccc;
+}
