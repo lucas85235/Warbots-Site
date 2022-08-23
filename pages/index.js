@@ -3,6 +3,7 @@ import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import SocialMedias from '../components/SocialMedias'
 import Header from '../components/Header'
+import Tokenomics from '../components/Tokenomics'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -85,11 +86,14 @@ export default function Home() {
       <div className={styles.page}>
         <Header />
 
-        {RenderAbout()}
+        <Tokenomics />
+
+        {/* {RenderAbout()}
         {RenderGameplay()}
         {RenderRoadmap()}
         {RenderTokenomics()}
-        {RenderTeam()}
+        {RenderTeam()} */}
+
         {RenderFooter()}
       </div>
     </div>
