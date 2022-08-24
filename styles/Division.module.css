@@ -1,7 +1,13 @@
 .division {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10px;
+    z-index: 10;
+    margin-top: -0.35rem;
+    margin-bottom: -0.3rem;
 }
 
 .line {
@@ -17,4 +23,16 @@
     margin: 0 2rem;
     border-radius: 0.5rem;
     transform: rotate(45deg);
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .line {
+        width: 20%;
+    }
 }

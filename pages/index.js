@@ -7,33 +7,10 @@ import About from '../components/About'
 import Division from '../components/Division'
 import Gameplay from '../components/Gameplay'
 import Tokenomics from '../components/Tokenomics'
+import Roadmap from '../components/Roadmap'
 import Footer from '../components/Footer'
 
 export default function Home() {
-
-  function RenderRoadmap() {
-    return (
-      <div className={styles.container}>
-        <h1>Roadmap</h1>
-        <h3 className={styles.text}>Entrega 1</h3>
-        <h3 className={styles.text}>Entrega 2</h3>
-        <h3 className={styles.text}>Entrega 3</h3>
-        <h3 className={styles.text}>Entrega 4</h3>
-      </div>
-    )
-  }
-
-  function RenderTeam() {
-    return (
-      <div className={styles.container}>
-        <h1>Team</h1>
-        <h3 className={styles.text}>Anonimo 1</h3>
-        <h3 className={styles.text}>Anonimo 2</h3>
-        <h3 className={styles.text}>Anonimo 3</h3>
-        <h3 className={styles.text}>Anonimo 4</h3>
-      </div>
-    )
-  }
 
   return (
     <div>
@@ -51,14 +28,14 @@ export default function Home() {
 
         <About />
         <Division />
-        
+
         <Gameplay />
         <Division />
 
         <Tokenomics />
         <Division />
 
-        {RenderRoadmap()}
+        <Roadmap />
         <Footer />
       </div>
     </div>
