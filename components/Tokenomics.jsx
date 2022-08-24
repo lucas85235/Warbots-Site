@@ -52,7 +52,7 @@ function TokensList() {
     return (
         <div className={styles.listContainer}>
             {tokenAllocation.map(data =>
-                <div className={styles.item}>
+                <div className={styles.item} key={data.label}>
                     <div className={styles.box} style={{backgroundColor: data.color}}></div>
                     <div className={styles.content}>
                         <span className={styles.text} style={{color: data.color}}>{data.label}</span>

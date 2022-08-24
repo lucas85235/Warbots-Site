@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image'
 import styles from '../styles/NavBar.module.css'
 import Button from './Button';
 
@@ -39,7 +40,7 @@ function CreateButtons(listLinks) {
     return (
         <div>
             {listLinks.map(data =>
-                <Button href={data.href} primary={data.primary} target={data.target}>
+                <Button href={data.href} primary={data.primary} target={data.target} key={data.label}>
                     {data.label}
                 </Button>
             )}
@@ -129,7 +130,7 @@ export default function RenderMenu() {
 
                     <div className={styles.divLeft}>
                         <div className={styles.divLeftLogo}>
-                            <img src="/warbots-logo.png" alt="" width="97px" height="53px" />
+                            <Image src="/warbots-logo.png" alt="" width="97px" height="53px" />
                         </div>
                         <div className={styles.divButtons}>
                             <div className={styles.buttonsList}>
