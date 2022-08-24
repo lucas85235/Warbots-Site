@@ -7,7 +7,7 @@ export default function Footer() {
             justifyContent: "center",
             backgroundColor: "#111",
         }}>
-            <span style={{color: "#fff"}}>© 2021 Copyright - Warbots</span>
+            <span style={{color: "#fff"}}>© 2022 Copyright - Warbots</span>
         </div>
     )
 }

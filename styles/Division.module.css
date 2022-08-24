@@ -1,0 +1,20 @@
+.division {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    border: solid 2px;
+    width: 10rem;
+    height: 1px;
+}
+
+.box {
+    background-color: #222;
+    width: 40px;
+    height: 40px;
+    margin: 0 2rem;
+    border-radius: 0.5rem;
+    transform: rotate(45deg);
+}

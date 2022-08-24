@@ -3,33 +3,13 @@ import styles from '../styles/Home.module.css'
 import SocialMedias from '../components/SocialMedias'
 import NavBar from '../components/NavBar'
 import Header from '../components/Header'
+import About from '../components/About'
+import Division from '../components/Division'
+import Gameplay from '../components/Gameplay'
 import Tokenomics from '../components/Tokenomics'
 import Footer from '../components/Footer'
 
 export default function Home() {
-
-  function RenderAbout() {
-    return (
-      <div className={styles.container}>
-        <h1>O que é Warbots?</h1>
-        <h3 className={styles.text}>
-          O Warbots utiliza mecânicas de jogos de RPG e de cartas, para garantir que o jogador com a melhor estratégia vença!
-          Junte-se a esses poderosos robôs em batalhas rápidas e emocionantes!
-        </h3>
-      </div>
-    )
-  }
-
-  function RenderGameplay() {
-    return (
-      <div className={styles.container}>
-        <h1>Gameplay</h1>
-        <h3 className={styles.text}>
-          Cada  War Robot um possui seu baralho próprio de cartas, que representam suas habilidades de combate. Administre a energia de cada um para utilizar golpes poderosos, levantar suas defesas, ou até mesmo atrapalhar o adversário!
-        </h3>
-      </div>
-    )
-  }
 
   function RenderRoadmap() {
     return (
@@ -69,13 +49,16 @@ export default function Home() {
       <div className={styles.page}>
         <Header />
 
-        {RenderAbout()}
-        {RenderGameplay()}
+        <About />
+        <Division />
+        
+        <Gameplay />
+        <Division />
 
         <Tokenomics />
-        {RenderRoadmap()}
-        {/* {RenderTeam()} */}
+        <Division />
 
+        {RenderRoadmap()}
         <Footer />
       </div>
     </div>
