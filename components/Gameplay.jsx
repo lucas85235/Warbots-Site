@@ -24,7 +24,7 @@ function Gameplay() {
                 marginBottom: '2rem',
                 marginTop: '2em',
             }}>
-                <Image src="/../public/screenshots/game.png" width={480} height={270} style={{ borderRadius: '1rem' }} />
+                <Image src="/screenshots/game.png" width={480} height={270} alt="" style={{ borderRadius: '1rem' }} />
             </div>
         )
     }

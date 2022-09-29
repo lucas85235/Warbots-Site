@@ -9,6 +9,18 @@ const links = [
     },
 ];
 
+function CreateButtons(listLinks) {
+    return (
+        <div>
+            {listLinks.map(data =>
+                <Button href={data.href} target={data.target} key={data.label} primary>
+                    {data.label}
+                </Button>
+            )}
+        </div>
+    )
+}
+
 const Header = () => (
     <header className={styles.image}>
 
@@ -27,9 +39,7 @@ const Header = () => (
             </div>
 
             <div className={styles.button}>
-                <a href={links[0].href} target={links[0].target}>
-                    <Button primary>{links[0].label}</Button>
-                </a>
+                {CreateButtons(links)}
             </div>
 
         </div>

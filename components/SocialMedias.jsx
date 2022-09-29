@@ -12,20 +12,26 @@ const buttons = [
     }
 ]
 
-function Button(props) {
+const RenderButtons = () => {
     return (
-        <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>
-                <Image src={props.image} alt="" width="75px" height="75px" />
-            </button>
-        </a>
+        <div >
+            {buttons.map((data, key)=> {
+                return (
+                    <a key={key} href={data.link} target="_blank" rel="noopener noreferrer">
+                        <button className={styles.button}>
+                            <Image src={data.image} alt="" width="75px" height="75px" />
+                        </button>
+                    </a>                      
+                )
+            })}
+        </div>
     )
 }
 
 export default function SocialMedias(props) {
     return (
         <div className={styles.container}>
-            {buttons.map(data => Button(data))}
+            <RenderButtons/>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import styles from '../styles/Roadmap.module.css'
+import Image from 'next/image'
 
 const milestones = [
     {
@@ -46,7 +47,7 @@ function CreateMilestones(index) {
             </div>
             {milestones[index].tasks.map((task) => (
                 <div className={styles.text} style={{ color: task.complete ? "#33cc00" : "#444"}} key={"q1-" + task.label}>
-                    {task.complete ? <img src="check.png" width={18} height={18} style={{ marginRight: "0.5rem" }}/> : ""}
+                    {task.complete ? <Image src="/check.png" width={18} height={18} alt="" style={{ marginRight: "0.5rem" }}/> : ""}
                     {task.label}
                 </div>
             ))}
