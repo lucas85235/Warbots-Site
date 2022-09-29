@@ -1,4 +1,5 @@
 import styles from '../styles/Button.module.css'
+import Link from 'next/link';
 
 const Button = ({ href, target, primary, modifier, children, ...rest }) => {
     const buttonStyle = primary
@@ -6,11 +7,13 @@ const Button = ({ href, target, primary, modifier, children, ...rest }) => {
         : styles.secondary;
 
     return (
-        <a href={href} target={target}>
-            <button type="button" className={`${styles.base} ${buttonStyle} ${modifier}`} {...rest}>
-                {children}
-            </button>
-        </a>
+        <Link href={href ? href : "/"} passHref>
+            <a target={target} rel="noopener noreferrer">
+                <button type="button" className={`${styles.base} ${buttonStyle} ${modifier}`} {...rest}>
+                    {children}
+                </button>                
+            </a>
+        </Link>
     );
 };
 
