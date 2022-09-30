@@ -24,8 +24,8 @@ const milestones = [
             { label: "START NFT SALES", complete: false },
             { label: "TOKEN LAUNCH ", complete: false },
             { label: "PANCAKESWAP LISTING ", complete: false },
-            { label: "AVENTURE MODE (PvE)", complete: false },
-            { label: "MULTIPLAYER QUICK MATCH (PvP) ", complete: false },
+            { label: "AVENTURE MODE", complete: false },
+            { label: "MULTIPLAYER QUICK MATCH", complete: false },
             { label: "PLAY-TO-EARN MISSIONS", complete: false },
             { label: "REWARDS WITHDRAWAL", complete: false },
         ]
@@ -37,7 +37,7 @@ const milestones = [
             { label: "WARBOTS UPGRADE SYSTEM", complete: false },
             { label: "BUY TOOLS / MARKETPLACE", complete: false },
             { label: "NEW EXCHANGE LISTING", complete: false },
-            { label: "LAUNCH MULTIPLAYER RANKED BATTLES", complete: false },
+            { label: "MULTIPLAYER RANKED BATTLES", complete: false },
         ]
     }
 ]
