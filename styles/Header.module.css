@@ -1,7 +1,19 @@
 .image {
-    min-height: calc(50vh - 6rem);
-    background-image: url("../public/background.png");
-    background-position: top, left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100vw;
+    height: calc((100vw * 9) / 16);
+
+    min-height: calc(20vh - 6rem);
+    max-height: 875px;
+    max-width: 100%;
+
+    background-image: url("../public/warbots.png");
+    background-position: top, center;
+    background-size: cover;
+
 }
 
 .div {
@@ -50,37 +62,70 @@
     width: 100%;
 }
 
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonPos {
+    position: absolute;
+    bottom: 5%;
+}
+
+.customButton {
+    padding: 15px 25px;
+    border: #ff5200 solid 3px;
+}
+
 /* lg */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .div {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     .text {
-        font-size: 6rem;
+        font-size: 3.5rem;
         line-height: 1;
     }
 
     .descriptionText {
-        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        font-size: 1.25rem;
         line-height: 2rem;
     }
-
 }
 
 /* md */
 @media (max-width: 768px) {
     .text {
-        font-size: 3rem;
+        font-size: 2.75rem;
         line-height: 1;
+    }
+
+    .customButton {
+        padding: 10px 15px;
+        border: #ff5200 solid 2px;
     }
 }
 
 /* sm */
-@media (min-width: 640px) {
+@media (max-width: 640px) {
     .div {
         padding-left: 1rem;
         padding-right: 1.5rem;
+    }
+
+    .customButton {
+        padding: 5px 10px;
+        border: #ff5200 solid 2px;
+    }
+
+    .buttonPos {
+        bottom: 3%;
     }
 }

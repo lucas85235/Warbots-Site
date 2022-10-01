@@ -2,21 +2,6 @@ import styles from '../styles/Tokenomics.module.css'
 
 const tokenAllocation = [
     {
-        label: "IDO",
-        porcent: "2%",
-        color: "#0d6efd"
-    },
-    {
-        label: "Private Sale",
-        porcent: "2%",
-        color: "#0dcaf0"
-    },
-    {
-        label: "Liquidity",
-        porcent: "5%",
-        color: "#dc3545"
-    },
-    {
         label: "Play to Earn",
         porcent: "40%",
         color: "#6f42c1"
@@ -40,6 +25,21 @@ const tokenAllocation = [
         label: "Reserves",
         porcent: "6%",
         color: "#ffc107"
+    },
+    {
+        label: "Liquidity",
+        porcent: "5%",
+        color: "#dc3545"
+    },
+    {
+        label: "IDO",
+        porcent: "2%",
+        color: "#0d6efd"
+    },
+    {
+        label: "Private Sale",
+        porcent: "2%",
+        color: "#0dcaf0"
     },
     {
         label: "Advisor",
