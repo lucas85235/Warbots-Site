@@ -11,9 +11,9 @@ const links = [
 
 function CreateButtons(listLinks) {
     return (
-        <div>
+        <div className={styles.buttonPos}>
             {listLinks.map(data =>
-                <Button href={data.href} target={data.target} key={data.label} primary>
+                <Button href={data.href} target={data.target} key={data.label} primary modifier={styles.customButton}>
                     {data.label}
                 </Button>
             )}
@@ -24,7 +24,7 @@ function CreateButtons(listLinks) {
 const Header = () => (
     <header className={styles.image}>
 
-        <div className={styles.div}>
+        {/* <div className={styles.div}>
 
             <h1 className={styles.text}>
                 <span className={styles.span}>Join us </span>
@@ -38,10 +38,10 @@ const Header = () => (
                 </p>
             </div>
 
-            <div className={styles.button}>
-                {CreateButtons(links)}
-            </div>
+        </div> */}
 
+        <div className={styles.buttonContainer}>
+            {CreateButtons(links)}
         </div>
 
     </header>
