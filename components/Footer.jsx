@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <div style={{
-            height: 60,
+            height: 50,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

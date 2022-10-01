@@ -19,18 +19,13 @@ const links = [
 
 const secondaryLinks = [
     {
-        label: "Play Demo",
-        href: "https://darksardinha.itch.io/warbots",
-        target: "_blank",
-    },
-    {
         label: "Whitepaper",
         href: "https://lucas85235.gitbook.io/warbots-whitepaper/",
         target: "_blank",
     },
     {
         label: "Whitelist",
-        href: "https://forms.gle/XHGCCr3h6BvmfnHb6",
+        href: "https://forms.gle/QzB1Bh7WDTL8jCZi7",
         target: "_blank",
         primary: true
     },
