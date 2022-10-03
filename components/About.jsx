@@ -12,16 +12,16 @@ function About() {
 
     return (
         <div style={{
-            minHeight: "40vh",
+            minHeight: "35vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
         }}>
-            <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
-                <h1 style={{ textAlign: "center" }}>O que é Warbots?</h1>
+            <div style={{ marginTop: "2rem", marginBottom: "3.5rem" }}>
+                <h1 style={{ textAlign: "center" }}>What is Warbots?</h1>
                 <p style={textStyle}>
-                    O Warbots é um jogo em blockchain, que utiliza mecânicas de jogos de RPG e de cartas, para garantir que o jogador com a melhor estratégia vença! Junte-se a esses poderosos robôs em batalhas rápidas e emocionantes!
+                Warbots is a blockchain game that uses RPG and card game mechanics to ensure that the player with the best strategy wins! Join these mighty robots in fast paced and exciting battles!
                 </p>
             </div>
         </div>

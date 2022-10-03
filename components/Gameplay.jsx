@@ -37,13 +37,13 @@ function Gameplay() {
             justifyContent: "center",
             flexDirection: "column",
         }}>
-            <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
+            <div style={{ marginTop: "3rem", marginBottom: "3.5rem" }}>
                 <h1 style={{ textAlign: "center" }}>Gameplay</h1>
                 <p style={textStyle}>
-                    Cada robô é composto de 5 partes: A cabeça, o corpo, o braço direito, o braço esquerdo, e as pernas. São essas partes que irão definir as estatísticas e os ataques do seu Warbot. Essas peças são NFTs, que podem ser adquiridos, trocados e vendidos pela comunidade de jogadores.
+                    Each robot is made up of 5 parts: the head, the body, the right arm, the left arm, and the legs. These are the parts that will define your Warbot's stats and attacks. These parts are NFTs, which can be purchased, traded and sold by the player community.
                 </p>
                 <p style={textStyle}>
-                    Warbots adota um modelo de jogo chamado “play-to-earn”, ou seja, jogue para ganhar. O jogador poderá enfrentar tanto o modo PvE quanto o modo PvP para ser recompensado com Tokens dentro do jogo! Esses Tokens podem ser utilizado tanto dentro do jogo, para aquisição de novas peças e upgrades, como ser sacado pelo usuário.
+                    Warbots adopts a game model called “play-to-earn”, that is, play to win. The player will be able to face both PvE and PvP modes to be rewarded with In-game Tokens! These Tokens can be used both within the game, for the acquisition of new parts and upgrades, as well as being withdrawn by the user.
                 </p>
             </div>
         </div>
