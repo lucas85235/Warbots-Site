@@ -8,6 +8,7 @@
     bottom: 10px;
     width: 65px;
     height: 135px;
+    z-index: 10;
 }
 
 .button {
