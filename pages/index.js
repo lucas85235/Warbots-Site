@@ -9,6 +9,7 @@ import Gameplay from '../components/Gameplay'
 import Tokenomics from '../components/Tokenomics'
 import Nfts from '../components/Nfts'
 import Roadmap from '../components/Roadmap'
+import Partners from '../components/Partners'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -40,6 +41,9 @@ export default function Home() {
         <Division />
 
         <Roadmap />
+        <Division />
+
+        <Partners />
         <Footer />
       </div>
     </div>
