@@ -25,21 +25,29 @@
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
-    margin-left: auto;    
+    margin-left: auto;
+}
+
+.imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
-    display: flex;
-    /* align-items: center;
-    width: 100%;
-    border: 1px solid red; */
-    
-    /* width: 100%;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto; */
+    border-radius: 50px;
+}
 
+.textStyle {
+    display: flex;
+    text-align: center;
+    color: #444;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 600px;
+    margin-top: 3rem;
 }
 
 /* lg */
