@@ -51,7 +51,7 @@ function Gameplay() {
 
             <div className={styles.carousel}>
                 <div className={styles.carouselinner}>
-                    <Image className={styles.carouselItem} src={imageList[selected]} layout="fill" objectFit='contain'/>
+                    <Image className={styles.carouselItem} src={imageList[selected]} layout="fill" objectFit='contain' alt={"Screenshots"}/>
                 </div>
 
                 <button className={styles.controlNext} onClick={Next}>
