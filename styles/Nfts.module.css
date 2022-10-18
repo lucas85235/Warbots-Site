@@ -1,0 +1,57 @@
+.container {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: bottom;
+}
+
+.h1 {
+    color: #222;
+    margin-top: 4rem;
+    margin-bottom: 1.25rem;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+    
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+.image {
+    display: flex;
+    /* align-items: center;
+    width: 100%;
+    border: 1px solid red; */
+    
+    /* width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto; */
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        background-size: cover;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .items {
+        display: inline;
+    }
+}

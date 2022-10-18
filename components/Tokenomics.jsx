@@ -3,7 +3,7 @@ import styles from '../styles/Tokenomics.module.css'
 const tokenAllocation = [
     {
         label: "Play to Earn",
-        porcent: "40%",
+        porcent: "45%",
         color: "#6f42c1"
     },
     {
@@ -13,7 +13,7 @@ const tokenAllocation = [
     },
     {
         label: "Devs",
-        porcent: "10%",
+        porcent: "5%",
         color: "#fd7e14"
     },
     {
