@@ -6,6 +6,7 @@
     flex-direction: column;
     background-image: url("../public/coin.png");
     background-position: bottom;
+    background-attachment: fixed !important;
 }
 
 .h1 {

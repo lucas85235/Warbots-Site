@@ -24,11 +24,11 @@ export default function Home() {
       <NavBar />
 
       <div className={styles.page}>
-        <Header />
+        <Header>
+        </Header>
 
         <About />
         <Division />
-
         <Gameplay />
         <Division />
 

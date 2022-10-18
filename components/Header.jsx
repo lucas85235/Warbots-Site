@@ -21,9 +21,10 @@ function CreateButtons(listLinks) {
     )
 }
 
-const Header = () => (
+const Header = ({children}) => (
     <header className={styles.image}>
-
+        {children}
+        
         {/* <div className={styles.div}>
 
             <h1 className={styles.text}>
@@ -40,9 +41,9 @@ const Header = () => (
 
         </div> */}
 
-        <div className={styles.buttonContainer}>
+        {/* <div className={styles.buttonContainer}>
             {CreateButtons(links)}
-        </div>
+        </div> */}
 
     </header>
 );

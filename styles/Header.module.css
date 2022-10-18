@@ -4,14 +4,13 @@
     margin-right: auto;
 
     width: 100vw;
-    height: calc((100vw * 9) / 16);
-
+    height: 90vh;
     min-height: calc(20vh - 6rem);
-    max-height: 875px;
+    max-height: 1080px;
     max-width: 100%;
 
     background-image: url("../public/warbots.png");
-    background-position: top, center;
+    background-position: center, center;
     background-size: cover;
 }
 
@@ -82,6 +81,9 @@
 
 /* lg */
 @media (max-width: 1024px) {
+    .image {
+        height: calc((100vw * 9) / 16);
+    }
     .div {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -101,6 +103,10 @@
 
 /* md */
 @media (max-width: 768px) {
+    .image {
+        height: 55vh;
+    }
+
     .text {
         font-size: 2.75rem;
         line-height: 1;
@@ -114,6 +120,10 @@
 
 /* sm */
 @media (max-width: 640px) {
+    .image {
+        height: 50vh;
+    }
+    
     .div {
         padding-left: 1rem;
         padding-right: 1.5rem;
