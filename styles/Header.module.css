@@ -10,7 +10,7 @@
     max-width: 100%;
 
     background-image: url("../public/warbots.png");
-    background-position: center, center;
+    background-position: top, center;
     background-size: cover;
 }
 

@@ -9,7 +9,7 @@
 
 .h1 {
     color: #222;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     margin-bottom: 1.25rem;
 }
 
@@ -18,12 +18,12 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 1rem;
-    margin-bottom: 3.5rem;
-    
+    margin-top: 0.5rem;
+    margin-bottom: 4.5rem;
+
     width: 100%;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto;
 }
@@ -38,8 +38,13 @@
     border-radius: 50px;
 }
 
+.textDiv {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .textStyle {
-    display: flex;
     text-align: center;
     color: #444;
     font-size: 1.1rem;
@@ -61,5 +66,8 @@
 @media (max-width: 768px) {
     .items {
         display: inline;
+        align-items: center;
+        justify-content: center;
+
     }
 }

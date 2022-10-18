@@ -50,7 +50,7 @@ function CreateMilestones(index) {
             <div>
                 {milestones[index].tasks.map((task) => (
                     <div className={styles.milestoneText} style={{ color: task.complete ? "#33cc00" : "#444" }} key={"q1-" + task.label}>
-                        {task.complete ? <div className={styles.check}><Image src="/check.png" width={18} height={18} alt="" /></div> : ""}
+                        {task.complete ? <div className={styles.check}><Image src="/icons/check.png" width={18} height={18} alt="" /></div> : ""}
                         {task.label}
                     </div>
                 ))}
