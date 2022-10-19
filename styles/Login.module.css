@@ -15,8 +15,8 @@
     height: 600px;
 
     max-width: 900px;
-    min-height: 400px;
-    max-height: 600px;
+    min-height: 500px;
+    max-height: 900px;
 }
 
 .windowContainer {
@@ -64,4 +64,40 @@
     background-size: 100% 100%;
     background-image: url("/partners/metamask-branca.png");
     margin-left: 1.5rem;
+}
+
+.boxes {
+    display: flex;
+}
+
+.lootbox {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 20px;
+
+}
+
+.text {
+    text-align: center;
+    color: #444;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 60rem;
+}
+
+.span {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* md */
+@media (max-width: 768px) {
+    .window {
+        height: 700px;
+    }
 }
