@@ -63,15 +63,11 @@ function Login() {
                         </div>
                         <div className={styles.lootbox}>
                             <span className={styles.text}>Gold Box</span>
-                            <Image className={styles.boxImage} src={"/icons/loot-gold.png"} width={180} height={180} alt="" />
+                            <Image className={styles.boxImage} src={"/icons/loot-gold.png"} width={190} height={190} alt="" />
                             <Button modifier={styles.buyButton} onClick={handleMint} primary>Buy</Button>
                         </div>
                     </div>
                     <span className={styles.span}>A Warbot is a set of 5 parts (Head, Body, Right Arm, Left Arm and Legs) joined in a single robot. These 5 parts are NFTs, and can be freely exchanged by the player, allowing customization of your Warbot. You can acquire a complete Warbot when purchasing a Gold Box, or a random part when purchasing a Silver Box.</span>
-                    {/* <div style={{ margin: '2rem' }}>
-                        <PartListView tokens={myTokens} />
-                    </div> */}
-                    {/* <Mint /> */}
                 </div>
             </div>
         )
@@ -79,7 +75,26 @@ function Login() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.window}>{!isLoged ? notLogedPanel() : isLogedPanel()}</div>
+            <div className={styles.window}>
+                {!isLoged ? notLogedPanel() : isLogedPanel()}
+            </div>
+            <div className={styles.window}>
+
+                {!isLoged ?
+                    <div className={styles.windowContainer}>
+                        <span className={styles.text}>Login to access</span>
+                    </div>
+                    :
+                    <div className={styles.div}>
+                        <div className={styles.title}>
+                            <h1>Nft's</h1>
+                        </div>
+                        <div className={styles.windowContainer}>
+                            <PartListView tokens={myTokens} />
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

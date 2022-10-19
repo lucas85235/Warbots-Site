@@ -6,7 +6,7 @@ const PartListView = (props) => {
 
     return (
         <div>
-            <h5>Tokens Collected:<span id="result">&nbsp;{tokens.length}</span></h5>
+            <h5>You acquired <span id="result">&nbsp;{tokens.length}</span> NFT</h5>
 
             <div className="grid mb-4">
                 {tokens.map((tokenURI, key) => {
