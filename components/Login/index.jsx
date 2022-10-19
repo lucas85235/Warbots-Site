@@ -79,7 +79,6 @@ function Login() {
                 {!isLoged ? notLogedPanel() : isLogedPanel()}
             </div>
             <div className={styles.window}>
-
                 {!isLoged ?
                     <div className={styles.windowContainer}>
                         <span className={styles.text}>Login to access</span>
@@ -89,9 +88,7 @@ function Login() {
                         <div className={styles.title}>
                             <h1>Nft's</h1>
                         </div>
-                        <div className={styles.windowContainer}>
-                            <PartListView tokens={myTokens} />
-                        </div>
+                        <PartListView tokens={myTokens} />
                     </div>
                 }
             </div>

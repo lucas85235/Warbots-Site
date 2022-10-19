@@ -8,16 +8,10 @@
 }
 
 .window {
+    min-width: 90%;
+    min-height: 600px;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 50px;
-
-    width: auto;
-    height: 700px;
-
-    max-width: 900px;
-    min-height: 500px;
-    max-height: 900px;
-
     margin: 4rem;
 }
 
@@ -28,13 +22,14 @@
     flex-direction: column;
     text-align: center;
     height: 100%;
+    min-height: 600px;
 }
 
 .div {
     height: calc((100%) - 100px);
 }
 
-.title, .desc {
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,8 +73,8 @@
     padding: 1rem;
     background-color: white;
     margin: 1rem;
+    margin-top: 3.5rem;
     border-radius: 20px;
-
 }
 
 .text {
@@ -93,15 +88,16 @@
 .span {
     text-align: center;
     font-size: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    /* border: 1px solid red; */
 }
 
-/* md */
-@media (max-width: 768px) {
-    .window {
-        height: 800px;
+/* sm */
+@media (max-width: 640px) {
+    .windowContainer {
+        min-height: 200px;
+        min-width: 300px;
     }
 }
