@@ -19,7 +19,7 @@ export default function Home() {
       <Head>
         <title>Warbots</title>
         <meta name="description" content="Warbots nft game" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo.png" />
       </Head>
 
       <SocialMedias />
