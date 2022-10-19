@@ -6,14 +6,22 @@ const Button = ({ href, target, primary, modifier, children, ...rest }) => {
         ? styles.primary
         : styles.secondary;
 
+    if (href) {
+        return (
+            <Link href={href ? href : "/"} passHref>
+                <a target={target} rel="noopener noreferrer">
+                    <button type="button" className={`${styles.base} ${buttonStyle} ${modifier}`} {...rest}>
+                        {children}
+                    </button>
+                </a>
+            </Link>
+        );
+    }
+
     return (
-        <Link href={href ? href : "/"} passHref>
-            <a target={target} rel="noopener noreferrer">
-                <button type="button" className={`${styles.base} ${buttonStyle} ${modifier}`} {...rest}>
-                    {children}
-                </button>                
-            </a>
-        </Link>
+        <button type="button" className={`${styles.base} ${buttonStyle} ${modifier}`} {...rest}>
+            {children}
+        </button>
     );
 };
 
