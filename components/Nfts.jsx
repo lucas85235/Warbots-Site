@@ -2,12 +2,16 @@ import Image from 'next/image'
 import styles from '../styles/Nfts.module.css'
 
 function Nfts() {
+    const myLoader = ({ src, width, quality }) => {
+        return `${src}?w=${width}&q=${quality || 75}`
+    }
+
     return (
         <div className={styles.container}>
             <h1 className={styles.h1}>Nfts</h1>
             <div className={styles.items}>
                 <div className={styles.imageDiv}>
-                    <Image className={styles.image} src="/custom_warbot.png" width={540} height={696} alt={"Custom Warbot"}></Image>
+                    <Image className={styles.image} src="/custom_warbot.png" width={540} height={696} alt={"Custom Warbot"} loader={myLoader}></Image>
                 </div>
                 <div className={styles.textDiv}>
                     <p className={styles.textStyle}> A Warbot is a set of 5 parts (Head, Body, Right Arm, Left Arm and Legs) joined in a single robot. These 5 parts are NFTs, and can be freely exchanged by the player, allowing customization of your Warbot. A Warbot is required to get rewards in Adventure (PvE) and Competitive (PvP) modes.</p>

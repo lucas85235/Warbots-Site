@@ -36,6 +36,10 @@ function Gameplay() {
         setSelected(i)
     }
 
+    const myLoader = ({ src, width, quality }) => {
+        return `${src}?w=${width}&q=${quality || 75}`
+    }
+
     return (
         <div className={styles.container}>
             
@@ -51,7 +55,7 @@ function Gameplay() {
 
             <div className={styles.carousel}>
                 <div className={styles.carouselinner}>
-                    <Image className={styles.carouselItem} src={imageList[selected]} layout="fill" objectFit='contain' alt={"Screenshots"}/>
+                    <Image className={styles.carouselItem} src={imageList[selected]} layout="fill" objectFit='contain' alt={"Screenshots"} loader={myLoader}/>
                 </div>
 
                 <button className={styles.controlNext} onClick={Next}>
