@@ -7,7 +7,7 @@ import Mint from "./Mint"
 
 function Login() {
 
-    const { isLoged, myTokens, doLogin, doMint } = useBlockchain()
+    const { isLoged, myTokens, doLogin, doMintPart, doMintRobot  } = useBlockchain()
 
     const eventsHandle = {
         onRegistered: (hash) => { handleRegistered(hash) },
@@ -30,9 +30,16 @@ function Login() {
         await doLogin()
     }
 
-    const handleMint = async () => {
+    const handleMintPart = async () => {
         if (isLoged) {
-            await doMint("1", eventsHandle)
+            await doMintPart(1, eventsHandle)
+        }
+        else console.log("Metamask is not connected!")
+    }
+
+    const handleMintRobot = async () => {
+        if (isLoged) {
+            await doMintRobot(1, eventsHandle)
         }
         else console.log("Metamask is not connected!")
     }
@@ -59,12 +66,12 @@ function Login() {
                         <div className={styles.lootbox}>
                             <span className={styles.text}>Silver Box</span>
                             <Image src={"/icons/loot-silver.png"} width={180} height={180} alt="" />
-                            <Button modifier={styles.buyButton} onClick={handleMint} primary>Buy</Button>
+                            <Button modifier={styles.buyButton} onClick={handleMintPart} primary>Buy</Button>
                         </div>
                         <div className={styles.lootbox}>
                             <span className={styles.text}>Gold Box</span>
                             <Image className={styles.boxImage} src={"/icons/loot-gold.png"} width={190} height={190} alt="" />
-                            <Button modifier={styles.buyButton} onClick={handleMint} primary>Buy</Button>
+                            <Button modifier={styles.buyButton} onClick={handleMintRobot} primary>Buy</Button>
                         </div>
                     </div>
                     <span className={styles.span}>A Warbot is a set of 5 parts (Head, Body, Right Arm, Left Arm and Legs) joined in a single robot. These 5 parts are NFTs, and can be freely exchanged by the player, allowing customization of your Warbot. You can acquire a complete Warbot when purchasing a Gold Box, or a random part when purchasing a Silver Box.</span>

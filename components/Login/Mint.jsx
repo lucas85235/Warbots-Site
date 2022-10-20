@@ -2,7 +2,7 @@ import { useBlockchain } from '../../blockchain'
 
 const Mint = () => {
 
-    const { isLoged, doMint } = useBlockchain()
+    const { isLoged, doMintPart, doMintRobot } = useBlockchain()
 
     const eventsHandle = {
         onRegistered: (hash) => { handleRegistered(hash) },
@@ -23,7 +23,7 @@ const Mint = () => {
 
     const handleMint = async () => {
         if (isLoged) {
-            await doMint("1", eventsHandle)
+            await doMintPart(1, eventsHandle)
         }
         else {
             console.log("Metamask is not connected!")

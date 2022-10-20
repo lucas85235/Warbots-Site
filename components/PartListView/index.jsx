@@ -5,6 +5,10 @@ const PartListView = (props) => {
 
     const { tokens } = props
 
+    const myLoader = ({ src, width, quality }) => {
+        return `${src}?w=${width}&q=${quality || 75}`
+    }
+
     return (
         <div className={styles.div}>
             <div className={styles.title}>
@@ -15,8 +19,15 @@ const PartListView = (props) => {
                 {tokens.map((tokenURI, key) => {
                     console.log(tokenURI);
                     return (
-                        <div className={styles.part} key={key}><Image  src={"/robots/" + "Buildbot" + ".png"} width={100} height={100} alt="" /></div>
-
+                        <div className={styles.part} key={key}>
+                            <Image
+                                src={"/parts/" + tokenURI + ".png"}
+                                width="100%"
+                                height="100%"
+                                objectFit='scale-down'
+                                alt="Warbot Part"
+                                loader={myLoader} />
+                        </div>
                     )
                 })}
             </div>

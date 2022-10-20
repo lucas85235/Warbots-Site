@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import Web3 from "web3";
-import Mock from "./contracts/MemoryToken.json"
+import Mock from "./contracts/Part.json"
 
 const BlockchainContext = createContext()
 
@@ -102,13 +102,39 @@ export function BlockchainProvider({ children }) {
         }
     }
 
-    const doMint = async (nftURI, events) => {
+    const doMintPart = async (amount, events) => {
 
         const { onRegistered, onReceipt, onConfirmation, onError } = events
         const web3 = window.web3
 
-        nftContract.methods.mint(accountAddress, nftURI)
-            .send({ from: accountAddress })
+        nftContract.methods.mintPart(accountAddress, amount)
+            .send({ from: accountAddress, gasLimit: 275796 })
+            .on('transactionHash', async (hash) => { 
+                console.log("Transaction Submitted!")
+                await onRegistered(hash)
+            })
+            .on('receipt', async (receipt) => {
+                console.log("Your nft is minted with success!")
+                await onReceipt(receipt)
+                await getMyNftsFromBlockchain(nftContract, accountAddress)
+            })
+            .on('confirmation', async (confirmationNumber, receipt) => {
+                console.log("Confirmation registered!")
+                await onConfirmation(confirmationNumber, receipt)
+                await getMyNftsFromBlockchain(nftContract, accountAddress)
+            })
+            .on('error', async (err) => {
+                onError(err.message)
+            })
+    }
+
+    const doMintRobot = async (amount, events) => {
+
+        const { onRegistered, onReceipt, onConfirmation, onError } = events
+        const web3 = window.web3
+
+        nftContract.methods.mintRobot(accountAddress, amount)
+            .send({ from: accountAddress, gasLimit: 1158132 })
             .on('transactionHash', async (hash) => { 
                 console.log("Transaction Submitted!")
                 await onRegistered(hash)
@@ -136,7 +162,8 @@ export function BlockchainProvider({ children }) {
             myTokens: myNfts,
             getMyNftsFromBlockchain,
             doLogin,
-            doMint
+            doMintPart,
+            doMintRobot
         }}>
             {children}
         </BlockchainContext.Provider>
