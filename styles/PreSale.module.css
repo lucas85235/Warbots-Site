@@ -1,0 +1,14 @@
+.container {
+    width: auto;
+    height: auto;
+
+    min-height: 100vh;
+    max-width: 100vw;
+
+    background-color: #444;
+    background-size: 100%;
+    background-image: url("../public/background.png");
+    background-position: bottom;
+    background-attachment: fixed !important;
+    background-size: cover;
+}

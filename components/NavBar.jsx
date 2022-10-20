@@ -125,7 +125,9 @@ export default function RenderMenu() {
 
                     <div className={styles.divLeft}>
                         <div className={styles.divLeftLogo}>
-                            <Image src="/warbots-logo.png" alt="" width="97px" height="53px" />
+                            <a href="/">
+                                <Image src="/warbots-logo.png" alt="" width="97px" height="53px" />
+                            </a>
                         </div>
                         <div className={styles.divButtons}>
                             <div className={styles.buttonsList}>
@@ -133,7 +135,7 @@ export default function RenderMenu() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className={styles.divButtons}>
                         <div className={styles.buttonsList}>
                             {CreateButtons(secondaryLinks)}
