@@ -93,7 +93,7 @@ function Login() {
                     :
                     <div className={styles.div}>
                         <div className={styles.title}>
-                            <h1>Nft's</h1>
+                            <h1>Nft&apos;s</h1>
                         </div>
                         <PartListView tokens={myTokens} />
                     </div>

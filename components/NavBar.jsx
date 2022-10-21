@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
 import Button from './Button';
 
@@ -125,9 +126,11 @@ export default function RenderMenu() {
 
                     <div className={styles.divLeft}>
                         <div className={styles.divLeftLogo}>
-                            <a href="/">
-                                <Image src="/warbots-logo.png" alt="" width="97px" height="53px" />
-                            </a>
+                            <Link href="/">
+                                <a>
+                                    <Image src="/warbots-logo.png" alt="" width="97px" height="53px" />
+                                </a>
+                            </Link>
                         </div>
                         <div className={styles.divButtons}>
                             <div className={styles.buttonsList}>
